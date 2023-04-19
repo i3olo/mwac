@@ -20,7 +20,7 @@ spec:
           persistentVolume:
             size: "50Gi"
             accessModes:
-              - ReadWriteMany   
+              - ReadWriteOnce   
           retention: "30d"
           extraFlags:
             - storage.tsdb.retention.size=45GB
@@ -65,4 +65,3 @@ spec:
     automated: {}
     syncOptions:
       - CreateNamespace=true
-
